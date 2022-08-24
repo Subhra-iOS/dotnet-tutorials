@@ -1,4 +1,5 @@
 
+using System.Linq;
 using Catalog.Entities;
 
 namespace Catalog.Repositories
@@ -42,9 +43,9 @@ namespace Catalog.Repositories
             return items;
         }
 
-        public Item GetItem(Guid id)
+        public Item? GetItem(Guid id)
         {
-             return items.Where(item => item.Id == id).SingleOrDefault();
+             return items.Where(product => product.Id == id).SingleOrDefault();
         }
 
     }
