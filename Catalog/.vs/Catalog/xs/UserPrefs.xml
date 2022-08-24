@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{8BA236EA-FD28-4E7D-9BA5-EA61B61548A4}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Catalog PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Program.cs" Line="15" Column="22" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="18" Column="26" />
-      <File FileName="appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Catalog" expanded="True" selected="True">
+          <Node name="Catalog" expanded="True">
             <Node name="Catalog" expanded="True">
               <Node name="Properties" expanded="True" />
             </Node>
@@ -24,8 +25,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
