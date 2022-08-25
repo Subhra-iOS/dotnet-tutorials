@@ -3,33 +3,33 @@ using System.Linq;
 using Catalog.Entities;
 
 namespace Catalog.Repositories
-{   
-    public class InMemItemRepository
+{
+    public class InMemItemRepository : IItemRepository
     {
         private readonly List<Item> items = new()
         {
-            new Item 
+            new Item
             {
                 Id = Guid.NewGuid(),
                 Name = "Potion",
                 Price = 50,
                 CreatedDate = DateTimeOffset.UtcNow
             },
-            new Item 
+            new Item
             {
                 Id = Guid.NewGuid(),
                 Name = "Shield",
                 Price = 100,
                 CreatedDate = DateTimeOffset.UtcNow
             },
-            new Item 
+            new Item
             {
                 Id = Guid.NewGuid(),
                 Name = "Sword",
                 Price = 150,
                 CreatedDate = DateTimeOffset.UtcNow
             },
-            new Item 
+            new Item
             {
                 Id = Guid.NewGuid(),
                 Name = "Iron Armour",
@@ -45,9 +45,9 @@ namespace Catalog.Repositories
 
         public Item? GetItem(Guid id)
         {
-             return items.Where(product => product.Id == id).SingleOrDefault();
+            return items.Where(product => product.Id == id).SingleOrDefault();
         }
 
     }
-    
+
 }
