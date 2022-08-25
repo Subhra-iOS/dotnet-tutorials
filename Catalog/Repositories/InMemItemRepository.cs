@@ -48,6 +48,10 @@ namespace Catalog.Repositories
             return items.Where(product => product.Id == id).SingleOrDefault();
         }
 
+        public void CreateItem(Item item)
+        {
+            items.Add(item);
+        }
     }
 
 }
