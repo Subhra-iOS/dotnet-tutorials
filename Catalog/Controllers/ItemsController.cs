@@ -47,8 +47,29 @@ namespace Catalog.Controllers
                 Price = itemDto.Price,
                 CreatedDate = DateTimeOffset.UtcNow
             };
-            repository.CreateItem(item);
-            return CreatedAtAction(nameof(GetItem), new { Id = item.Id}, item.GetDto());
+            repository.Create(item);
+            return CreatedAtAction(nameof(GetItem),new { id = item.Id }, item.GetDto());
+        }
+
+        // PUT /item/{id}
+        [HttpPut("{id}")]
+        public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+        {
+            var existingItem = repository.GetItem(id);
+
+            if (existingItem is null)
+            {
+                return NotFound();
+            }
+
+            Item updatedItem = existingItem with
+            {
+                Name = itemDto.Name,
+                Price = itemDto.Price
+            };
+
+            repository.Update(updatedItem);
+            return NoContent();
         }
     }
 }

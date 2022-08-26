@@ -52,6 +52,17 @@ namespace Catalog.Repositories
         {
             items.Add(item);
         }
+
+        public void Create(Item item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Item item)
+        {
+            var index = items.FindIndex( findItem => findItem.Id == item.Id );
+            items[index] = item;
+        }
     }
 
 }
