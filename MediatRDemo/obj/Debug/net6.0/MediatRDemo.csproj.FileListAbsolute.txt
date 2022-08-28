@@ -25,3 +25,6 @@
 /Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/obj/Debug/net6.0/MediatRDemo.pdb
 /Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/obj/Debug/net6.0/MediatRDemo.genruntimeconfig.cache
 /Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/obj/Debug/net6.0/ref/MediatRDemo.dll
+/Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/bin/Debug/net6.0/MediatR.dll
+/Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/bin/Debug/net6.0/MediatR.Contracts.dll
+/Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

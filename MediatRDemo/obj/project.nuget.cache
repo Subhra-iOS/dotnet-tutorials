@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "UmILYYnrjUQSFWv264sFTUodYJw6mNRCEWfhEOt7fGHiM2NKZkglgQ7pdcL4bCRduEmuDHv03ThjfNJL87xixw==",
+  "dgSpecHash": "HMHb4iKNx5lUtuW4uNAkaaYWpKxXV2Que0xP06J9L0A729FOBJr5YXaukMr2au0el7ESTUCLlyxlzkw2/Bk5OQ==",
   "success": true,
   "projectFilePath": "/Users/subhraroy/Desktop/POC/GitHub/dotnet-tutorials/MediatRDemo/MediatRDemo.csproj",
   "expectedPackageFiles": [
+    "/Users/subhraroy/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/subhraroy/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/subhraroy/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/10.0.1/mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "/Users/subhraroy/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/subhraroy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/subhraroy/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/subhraroy/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/subhraroy/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

@@ -1,25 +1,27 @@
-using MediatRDemo.IDataAccessMediatR;
 using MediatRDemo.Models;
 using MediatRDemo.ModelDto;
+using MediatRDemo.Extension;
+using MediatRDemo.DataAccess;
 
 namespace MediatRDemo.DataAccessRepo
 {
-    public class DataAccessRepo
+    public class DataAccessRepo : IDataAccess
     {
-        /*private readonly IDataAccessMediatR _mediatR;
-        public DataAccessRepo(IDataAccessMediatR mediatR)
-        {
-            this._mediatR = mediatR;
-        }*/
-
         private readonly List<PersonModel> people = new();
 
-        public List<PersonModel> GetPeople()
+        public List<PersonDto> GetPeople()
         {
-            return people;
+            var personList = people.Select(person => person.GetDto());
+
+            if (personList == null)
+            {
+                return NotFound();
+            }
+
+            return (List<PersonDto>)personList;
         }
 
-        public PersonModel InsertPerson(string firstName, string lastName)
+        public PersonDto InsertPerson(string firstName, string lastName)
         {
             PersonModel person = new PersonModel
             {
@@ -28,7 +30,7 @@ namespace MediatRDemo.DataAccessRepo
                 LastName = lastName
             };
             people.Add(person);
-            return person;
+            return person.GetDto();
         }
     }
 }
