@@ -12,12 +12,6 @@ namespace MediatRDemo.DataAccessRepo
         public List<PersonDto> GetPeople()
         {
             var personList = people.Select(person => person.GetDto());
-
-            if (personList == null)
-            {
-                return NotFound();
-            }
-
             return (List<PersonDto>)personList;
         }
 
