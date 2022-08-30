@@ -7,12 +7,20 @@ namespace MediatRDemo.DataAccessRepo
 {
     public class DataAccessRepo : IDataAccess
     {
-        private readonly List<PersonModel> people = new();
+        private readonly List<PersonModel> people = new()
+        {
+            new PersonModel
+            {
+                Identifier = Guid.NewGuid(),
+                FirstName = "Subhra",
+                LastName  = "Roy"
+            }
+        };
 
-        public List<PersonDto> GetPeople()
+        public IEnumerable<PersonDto> GetPeople()
         {
             var personList = people.Select(person => person.GetDto());
-            return (List<PersonDto>)personList;
+            return personList;
         }
 
         public PersonDto InsertPerson(string firstName, string lastName)

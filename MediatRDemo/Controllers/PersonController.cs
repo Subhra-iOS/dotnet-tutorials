@@ -16,10 +16,10 @@ namespace MediatRDemo.Controllers
 
         // GET /list
         [HttpGet]
-        public async Task<List<PersonDto>> GetPersonList()
+        public async Task<IEnumerable<PersonDto>> GetPersonList()
         {
-            var people = await _mediatR.Send(new GetPersonListQuery());
-            return people;
+            var peopleRequest = await _mediatR.Send(new GetPersonListQuery());
+            return peopleRequest;
         }
     }
 }
